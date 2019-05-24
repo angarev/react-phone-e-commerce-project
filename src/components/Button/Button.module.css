@@ -3,10 +3,10 @@
     border: 1px solid #e1e7ec;
     background: transparent;
     color: #232528;
-    padding: 1rem 1.6rem;
+    padding: .8rem 3rem;
     font-size: 1.6rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: 18px;
     overflow: hidden;
     cursor: pointer;
     -webkit-user-select: none;
@@ -15,4 +15,7 @@
     user-select: none;
     text-align: center;
     vertical-align: middle;
+    font-weight: 300;
+    -webkit-outline: none;
+    outline: none;
 }

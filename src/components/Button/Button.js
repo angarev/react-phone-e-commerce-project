@@ -6,7 +6,7 @@ const Button = (props) => {
     const btnStyle = props.style ? [classes.Btn, props.style].join(' ') : classes.Btn;
     
     return (    
-        <button className = {btnStyle}>
+        <button className = {btnStyle} onClick = {props.click}>
             {props.children}
         </button>
     );

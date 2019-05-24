@@ -1,0 +1,31 @@
+.imgContainer {
+   border-bottom: 1px solid rgba(0,0,0,.125);
+   transition: all 1s linear;
+}
+
+.cartStyle {
+    transition: all 1s linear;
+}
+
+.cartStyle:hover {
+    border-color: #0da9ef;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.cartStyle:hover .imgContainer {
+    border-color: #0da9ef;
+ 
+}
+
+
+.BtnViewDetails {
+    border-color: #0da9ef;
+    background-color: transparent;
+    color: #0da9ef;
+    transition: .8s ease all;
+}
+
+.BtnViewDetails:hover {
+    background-color: #0da9ef;;
+    color: #fff;
+}
