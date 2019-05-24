@@ -1,0 +1,18 @@
+
+.Btn {
+    border: 1px solid #e1e7ec;
+    background: transparent;
+    color: #232528;
+    padding: 1rem 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+}

@@ -1,0 +1,23 @@
+.NavigationLink {
+    color: #232528;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 3px 0;
+    transition: .3s ease all;
+
+}
+
+.NavigationLink:hover {
+    text-decoration: none;
+    color: #ffa400;
+    border-bottom: 1px solid #ffa400;
+}
+
+.BtnCart {
+    transition: .3s ease all;
+}
+
+.BtnCart:hover {
+    color: #ffa600b9;
+    border: 1px solid #ffa600b9;
+}

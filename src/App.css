@@ -1,4 +1,5 @@
 :root {
+  --white: #ffffff;
   --mainBlue: #2a2a72;
   --lightBlue: #009ffd;
   --mainWhite: #f3f3f3;
@@ -13,7 +14,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif !important;
-  background: var(--mainWhite) !important;
+  background: var(--white) !important;
   color: var(--mainDark) !important;
   font-weight: 400 !important;
   line-height: 1.6 !important;
@@ -31,4 +32,8 @@ body {
 
 .text-bright {
   color: var(--lightBlue);
+}
+
+.nav-link {
+  font-size: 1.3rem !important;
 }
