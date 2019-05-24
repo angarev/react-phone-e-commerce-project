@@ -1,15 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import {Switch, Route} from 'react-router-dom';
+// import logo from './logo.svg';
 import './App.css';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar/Navbar';
+import ProductList from './components/ProductList/ProductList';
+import Details from './components/PageNotFound/PageNotFound';
+import PageNotFound from './components/PageNotFound/PageNotFound';
+import Cart from './components/Cart/Cart';
 
-function App() {
-  return (
-    <React.Fragment>
-      <h1>Hello form outr app</h1>
+
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/" component = {ProductList}/>
+          <Route path="/details" component = {Details}/>
+          <Route path="/cart" component = {Cart}/>
+          <Route component = {PageNotFound}/>
+        </Switch>
     </React.Fragment>
-  );
+    )
+  }
 }
 
 export default App;
