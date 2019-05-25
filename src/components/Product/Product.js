@@ -14,8 +14,8 @@ export default class Product extends Component {
 
         return (
             <div className= "col-md-3 col-sm-6">
-                <div className={[classes.cartStyle, "card mb-5"].join(' ')}>
-                    <div className={[classes.imgContainer, "py-5"].join(' ')} onClick={() =>(console.log("you click me"))}>
+                <div className={`${classes.cartStyle} card mb-5`}>
+                    <div className={`${classes.imgContainer} py-5`} onClick={() =>(console.log("you click me"))}>
                         <Link to="/details">
                             <img src={img} className="card-img-top" alt={title}/>
                         </Link>
