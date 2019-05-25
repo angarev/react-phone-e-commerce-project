@@ -1,0 +1,51 @@
+.wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 36px 0;
+    border-bottom: 1px solid #e1e7ec;
+    background-color: #f5f5f5;
+}
+
+
+.wrapper h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.crumb {
+	display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.crumb>li {
+	display: inline-block;
+    color: #9da9b9;
+    font-size: 1.4rem;
+    cursor: default;
+	vertical-align: middle;
+	position: relative;
+}
+
+.crumb>li:not(:last-child)::after {
+	content: '>';
+	position: absolute;
+	top:6px;
+	right: -20px;
+}
+
+
+.crumb>li>a {
+    transition: color .25s;
+    color: #606975;
+    text-decoration: none;
+}
+
+.crumb>li>a:hover {
+    color: #0da9ef;
+    text-decoration: none;
+}

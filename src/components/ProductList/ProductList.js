@@ -7,7 +7,7 @@ export default class ProductList extends Component {
     render() {
        
         return (
-            <React.Fragment>                
+            <React.Fragment>              
                 <div className="container py-5">
                     <Title name="our" title="products"/>
                 </div>

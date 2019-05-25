@@ -21,20 +21,20 @@ class ProductProvider extends Component {
         storeProducts.forEach(item => {
             const itemSingle = {...item};
             tempProducts = [...tempProducts, itemSingle ]
-        })
+        });
 
         this.setState(() => {
             return {products: tempProducts}
-        })
-    }
+        });
+    };
 
     handleDetail = () => {
         console.log("hello from detail");
-    }
+    };
 
     addToCart = () => {
         console.log("hello from add to cart");
-    }
+    };
 
     render() {
         return (
@@ -48,8 +48,8 @@ class ProductProvider extends Component {
                 {this.props.children}
             </ProductContext.Provider>
         )
-    }
-}
+    };
+};
 
 //Consumer
 const ProductConsumer = ProductContext.Consumer;
