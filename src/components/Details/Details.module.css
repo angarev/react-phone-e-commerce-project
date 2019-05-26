@@ -1,0 +1,23 @@
+.BtnAddToCart {
+    border-color: #0da9ef;
+    background-color: transparent;
+    color: #0da9ef;
+    transition: .8s ease all;
+}
+
+.BtnAddToCart:hover {
+    background-color: #0da9ef;;
+    color: #fff;
+}
+
+.BtnViewDetails {
+    border-color: #ffa400;
+    background-color: transparent;
+    color: #ffa400;
+    transition: .8s ease all;
+}
+
+.BtnViewDetails:hover {
+    background-color: #ffa400;;
+    color: #fff;
+}
