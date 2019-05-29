@@ -28,7 +28,10 @@ export default class Product extends Component {
                                 <Button 
                                     style={classes.BtnViewDetails} 
                                     disabled={inCart}
-                                    click={() => {value.addToCart(id);}}>
+                                    click={() => {
+                                        value.addToCart(id);
+                                        value.openModal(id);
+                                        }}>
                                     {inCart ?(<span>In Cart</span>) : (<span>Add to Cart</span>)}
                                         </Button>
                             </div>

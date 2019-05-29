@@ -7,6 +7,7 @@ import ProductList from './components/ProductList/ProductList';
 import Details from './components/Details/Details';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Cart from './components/Cart/Cart';
+import Modal from './components/Modal/Modal';
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/cart" component = {Cart}/>
           <Route component = {PageNotFound}/>
         </Switch>
+        <Modal/>
     </React.Fragment>
     )
   }
