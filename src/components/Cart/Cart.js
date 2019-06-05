@@ -5,6 +5,8 @@ import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import CartColumns from './CartColumns';
 import EmptyCart from './EmptyCart';
 import CartList from './CartList';
+import CartTotals from './CartTotals';
+
 
 export default class Cart extends Component {
 
@@ -28,6 +30,7 @@ export default class Cart extends Component {
                                     <Title name="your "title="cart"/>
                                     <CartColumns/>
                                     <CartList value = {value}/>
+                                    <CartTotals value={value}/>
                                 </div>
                             )
                         } else {
