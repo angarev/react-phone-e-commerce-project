@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). [ Demo link](https://phone-store-with-react.netlify.com/)
 
 ## Available Scripts
 
