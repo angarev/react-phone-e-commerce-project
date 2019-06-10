@@ -30,7 +30,7 @@ export default function CartItem({item, value}) {
                 </div>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <strong className="text-danger h5" onClick={() => removeItem(id)}><i className="fas fa-trash-alt"></i> </strong>
+                <strong className="text-danger h5" style={{cursor: 'pointer'}} onClick={() => removeItem(id)}><i className="fas fa-trash-alt"></i> </strong>
             </div>
             <div className="col-10 mx-auto col-lg-2 text-right h5">
                 <strong>total: </strong> ${total}

@@ -85,15 +85,72 @@ class ProductProvider extends Component {
     }
 
     increment = id => {
-        console.log("This is increment method");
+        let tempCart = [...this.state.cart];
+        const product = this.incrementOrdecrementItem(id, tempCart);
+
+        product.count =  product.count + 1;
+        product.total = product.count * product.price;
+
+        this.setState(() => {
+            return {
+                cart: [...tempCart]
+            }
+        }, () => {
+            this.addTotals();
+        });
     }
     
     decrement = id => {
-        console.log("This is decrement method");
+        
+        let tempCart = [...this.state.cart];
+        const product = this.incrementOrdecrementItem(id, tempCart);
+
+        product.count =  product.count - 1;
+
+        if (product.count === 0) {
+            this.removeItem(id);
+        } else {
+
+            product.total = product.count * product.price;
+
+            this.setState(() => {
+                return {
+                    cart: [...tempCart]
+                }
+            }, () => {
+                this.addTotals();
+            });
+        }
+    }
+
+    incrementOrdecrementItem = (id,tempCart) => {
+
+        const selectedProduct = tempCart.find(item => item.id === id);
+        const index = tempCart.indexOf(selectedProduct);
+        const product = tempCart[index]; 
+        return product;
     }
 
     removeItem = id => {
-        console.log("This is removeItem method");
+        let tempProducts = [...this.state.products];
+        let tempCart = [...this.state.cart];
+        tempCart = tempCart.filter(item => item.id !== id);
+
+        const index = tempProducts.indexOf(this.getItem(id));
+        let removedProduct = tempProducts[index];
+
+        removedProduct.inCart = false;
+        removedProduct.count = 0;
+        removedProduct.total = 0;
+
+        this.setState(() => {
+            return {
+                cart: [...tempCart],
+                products: [...tempProducts]
+            }
+        }, () => {
+            this.addTotals();
+        })
     }
 
     clearCart = () => {
